@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+   <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/main.css">
+      <title>Page Title</title>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg bg-light navbar-light">
+         <img src="https://i.pinimg.com/736x/16/ae/4b/16ae4b98d0d6c60c6576d4d3dca384f2.jpg" width="60" height="50" class="mr-2"><a class="navbar-brand" href="index.html"> NYC Motor Vehicle Collisions</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+         <div class="collapse navbar-collapse" id="navbar-body">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav ml-auto">
+               
+               <li class="nav-item"><a class="nav-link" href="index.html">Homepage</a></li>
+               <li class="nav-item"><a class="nav-link" href="collision.html">Location</a></li>
+               <li class="nav-item"><a class="nav-link" href="#">Injuries</a></li>
+               <li class="nav-item"><a class="nav-link" href="driver.html">Drivers</a></li>
+               <li class="nav-item"><a class="nav-link" href="vehicle.html">Vehicles</a></li>
+               <li class="nav-item"><a class="nav-link" href="safety.html">Safety</a></li>
+
+ 
+            </ul>
+         </div>
+      </nav>
+
+
+      <div class="jumbotron jumbotron-fluid bg-light">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Text content -->
+            <div class="col-md-8">
+              <h1 class="display-4">Injuries</h1>
+              <p class="lead">This tab is designed to educate about the rate of injuries and type of injuries one can get in a  crash.</p>
+            </div>
+      
+            <!-- Image content -->
+            <div class="col-md-4 text-center">
+              <img src="inj.jpg" alt="Jumbotron Visual" class="img-fluid" style="max-height: 150px; object-fit: contain;">
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      
+      
+      <div class="container-fluid mt-4">
+      
+        <div class="row g-4 justify-content-center">
+      
+          <!-- types of injury-->
+          <div class="col-12 col-lg-10">
+            <div class="card h-100 shadow-lg">
+              <div class="card-header bg-white text-center">
+                <h5 class="mb-0">Flow of Injuries By Person Type and Body Region 
+                </h5>
+              </div>
+              <iframe src="intype-div.html" style="width: 100%; height: 500px; border: none;" loading="lazy"></iframe>
+              <div class="card-body">
+                <p class="card-text">
+                    This figure illustrates the flow of injuries by person type and affected body region. It shows that vehicle occupants sustain the highest number of injuries, followed by pedestrians, with bicyclists experiencing the fewest injuries. Across all groups, the most commonly injured body region is the back. Bicyclists and pedestrians also commonly have head injuries and knee-lower leg foot.
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- injury rate-->
+          <div class="col-12 col-lg-10">
+            <div class="card h-100 shadow-lg">
+              <div class="card-header bg-white text-center">
+                <h5 class="mb-0">Total Injuries By Crash Hour 
+                </h5>
+              </div>
+              <iframe src="inbyh-div.html" style="width: 100%; height: 500px; border: none;" loading="lazy"></iframe>
+              <div class="card-body">
+                <p class="card-text">
+                    This bar chart shows that the number of pedestrian, motorists,  and cyclist injuries varies throughout the day. The highest numbers occur during the morning and late afternoon  which is the typical commute time. Motorist injuries are generally more than cyclist and pedestrian injuries across most hours. Injuries are lowest during the very early mornings and tend to increase during daytime.
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- injury rateper vehi posi -->
+          <div class="col-12 col-lg-10">
+            <div class="card h-100 shadow-lg">
+              <div class="card-header bg-white text-center">
+                <h5 class="mb-0">Injury Rate by Position Within the Vehicle 
+                </h5>
+              </div>
+              <iframe src="inrate-div.html" style="width: 100%; height: 500px; border: none;" loading="lazy"></iframe>
+              <div class="card-body">
+                <p class="card-text">
+                    The bar chart shows the injury rates for individuals in different seating positions during vehicles. Passengers in the middle rear seat face the highest injury rate at 23.1%, followed closely by those in the rear of the vehicle and right rear positions. In contrast, drivers show a lower injury rate of 11.8%, suggesting they may benefit from better protection systems like airbags and seatbelt use. middle front seat passengers experience the lowest injury rate, possibly due to fewer people occupying that position. 
+                </p>
+              </div>
+            </div>
+          </div>
+      
+        
+      
+        </div>
+      </div>
+      
+
+
+      <footer class="bg-light text-dark pt-5 pb-3">
+         <div class="container">
+           <div class="row">
+             <!-- About Us Section -->
+             <div class="col-md-6">
+               <h5>About Us</h5>
+               <p>
+                 Our mission is to make traffic data more accessible and understandable to the public.
+               </p>
+             </div>
+       
+             <!-- Contact Us Section -->
+             <div class="col-md-6">
+               <h5>Contact Us</h5>
+       
+               <!-- First Row -->
+               <div class="d-flex align-items-center mb-2">
+                <span class="mr-2">Lindsay Abad</span>
+                <a href="https://www.linkedin.com/in/lindsay-abad/" target="_blank" class="text-dark mr-2">
+                  <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a href="https://github.com/lolind-apprentice" target="_blank" class="text-dark">
+                  <i class="fab fa-github fa-lg"></i>
+                </a>
+              </div>
+      
+              <!-- Second Row -->
+              <div class="d-flex align-items-center mb-2">
+                <span class="mr-2">Pomaa Anim-Amofa</span>
+                <a href="https://www.linkedin.com/in/pomaa-anim-amofa/" target="_blank" class="text-dark mr-2">
+                  <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a href="https://github.com/panimamo" target="_blank" class="text-dark">
+                  <i class="fab fa-github fa-lg"></i>
+                </a>
+              </div>
+       
+             </div>
+           </div>
+         </div>
+       </footer>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="js/main.js"></script>
+   </body>
+</html>

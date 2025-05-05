@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+   <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/main.css">
+      <title>Page Title</title>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg bg-light navbar-light">
+         <img src="https://i.pinimg.com/736x/16/ae/4b/16ae4b98d0d6c60c6576d4d3dca384f2.jpg" width="60" height="50" class="mr-2"><a class="navbar-brand" href="index.html"> NYC Motor Vehicle Collisions</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+         <div class="collapse navbar-collapse" id="navbar-body">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav ml-auto">
+               
+               <li class="nav-item"><a class="nav-link" href="index.html">Homepage</a></li>
+               <li class="nav-item"><a class="nav-link" href="collision.html">Location</a></li>
+               <li class="nav-item"><a class="nav-link" href="injuries.html">Injuries</a></li>
+               <li class="nav-item"><a class="nav-link" href="#">Drivers</a></li>
+               <li class="nav-item"><a class="nav-link" href="vehicle.html">Vehicles</a></li>
+               <li class="nav-item"><a class="nav-link" href="safety.html">Safety</a></li>
+
+ 
+            </ul>
+         </div>
+      </nav>
+
+
+      <div class="jumbotron jumbotron-fluid bg-light">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Text content -->
+            <div class="col-md-8">
+              <h1 class="display-4">Drivers</h1>
+              <p class="lead">This tab is designed to educate about the behavior of drivers before and after crashes to prevent crashes.</p>
+            </div>
+      
+            <!-- Image content -->
+            <div class="col-md-4 text-center">
+              <img src="dri.jpg" alt="Jumbotron Visual" class="img-fluid" style="max-height: 150px; object-fit: contain;">
+            </div>
+          </div>
+        </div>
+      </div>
+     
+        <!--cointainer should start-->
+        <div class="container-fluid mt-4">
+            <h2 class="text-center mb-4">Demographics</h2>
+            <div class="row g-4 justify-content-center">
+          
+              <!-- gender -->
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-lg">
+                  <div class="card-header bg-white text-center">
+                    <h5 class="mb-0">
+                      Gender Distribution of Individuals Involved in NYC Vehicle Collisions
+                    </h5>
+                  </div>
+                  <iframe src="gender-div.html" style="width: 100%; height: 500px; border: none;" loading="lazy"></iframe>
+                  <div class="card-body">
+                    <p class="card-text">
+                      The pie chart highlights the gender of individuals involved in collisions. The data is categorized as Male, Female, and Unknown. From the visualization, we can see that more males are involved in collisions compared to females, with the proportion of male individuals being more than double that of females. This disparity may point to differences in driving behavior and other contributing factors.
+                    </p>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- license -->
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-lg">
+                  <div class="card-header bg-white text-center">
+                    <h5 class="mb-0">
+                      Driver License Status in NYC Vehicle Collisions
+                    </h5>
+                  </div>
+                  <iframe src="lic-div.html" style="width: 100%; height: 500px; border: none;" loading="lazy"></iframe>
+                  <div class="card-body">
+                    <p class="card-text">
+                      This pie chart illustrates the distribution of driver license statuses among individuals involved in vehicle collisions. The data shows the proportion of drivers who are licensed, unlicensed, or have their permit. From this visualization, we see that most collisions occur with drivers who are licensed.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+                <!-- age -->
+                <div class="col-12 col-md-10">
+                    <div class="card h-100 shadow-lg mt-3">
+                    <div class="card-header bg-white text-center">
+                        <h5 class="mb-0">
+                        Average Age of People Involved In Crashes By Hour 
+                        </h5>
+                    </div>
+                    <iframe src="age-div.html" style="width: 100%; height: 500px; border: none;" loading="lazy"></iframe>
+                    <div class="card-body">
+                        <p class="card-text">
+                            The average age of people involved in collisions in New York City changes throughout the day. There is a lower average in ages very early in the morning and higher averages during commute times around 8-9am and 6PM when the roads are mostly busy.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--cointainer should end-->
+        
+
+      
+        <!--cointainer should open-->
+        <div class="container-fluid mt-4">
+            <h2 class="text-center mb-4">Driver Behavior</h2>
+            <div class="row g-4 justify-content-center">
+          
+              <!-- contributing factors -->
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-lg">
+                  <div class="card-header bg-white text-center">
+                    <h5 class="mb-0">
+                        Contributing Factors in NYC Vehicle Collisions
+                    </h5>
+                  </div>
+                  <iframe src="fac-div.html" style="width: 100%; height: 500px; border: none;" loading="lazy"></iframe>
+                  <div class="card-body">
+                    <p class="card-text">
+                        This visualization provides insight into the primary contributing factors of  collisions. The most common factor contributing to these collisions is Driver’s Inattention or distraction followed by a failure to Yield to the right of way, which points to issues regarding the driver’s judgment and their ability to follow traffic rules.
+                    </p>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- pre crash -->
+              <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-lg">
+                  <div class="card-header bg-white text-center">
+                    <h5 class="mb-0">
+                        Pre-Crash Behavior vs. Point of Impact 
+                    </h5>
+                  </div>
+                  <iframe src="precrash-div.html" style="width: 100%; height: 500px; border: none;" loading="lazy"></iframe>
+                  <div class="card-body">
+                    <p class="card-text">
+                      This pie chart illustrates the distribution of driver license statuses among individuals involved in vehicle collisions. The data shows the proportion of drivers who are licensed, unlicensed, or have their permit. From this visualization, we see that most collisions occur with drivers who are licensed.
+                    </p>
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          </div>        
+        <!--cointainer should end-->
+      
+      
+
+
+      <footer class="bg-light text-dark pt-5 pb-3">
+         <div class="container">
+           <div class="row">
+             <!-- About Us Section -->
+             <div class="col-md-6">
+               <h5>About Us</h5>
+               <p>
+                 Our mission is to make traffic data more accessible and understandable to the public.
+               </p>
+             </div>
+       
+             <!-- Contact Us Section -->
+             <div class="col-md-6">
+               <h5>Contact Us</h5>
+       
+               <!-- First Row -->
+               <div class="d-flex align-items-center mb-2">
+                <span class="mr-2">Lindsay Abad</span>
+                <a href="https://www.linkedin.com/in/lindsay-abad/" target="_blank" class="text-dark mr-2">
+                  <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a href="https://github.com/lolind-apprentice" target="_blank" class="text-dark">
+                  <i class="fab fa-github fa-lg"></i>
+                </a>
+              </div>
+      
+              <!-- Second Row -->
+              <div class="d-flex align-items-center mb-2">
+                <span class="mr-2">Pomaa Anim-Amofa</span>
+                <a href="https://www.linkedin.com/in/pomaa-anim-amofa/" target="_blank" class="text-dark mr-2">
+                  <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a href="https://github.com/panimamo" target="_blank" class="text-dark">
+                  <i class="fab fa-github fa-lg"></i>
+                </a>
+              </div>
+              
+             </div>
+           </div>
+         </div>
+       </footer>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="js/main.js"></script>
+   </body>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+   <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/main.css">
+      <title>Page Title</title>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg bg-light navbar-light">
+         <img src="https://i.pinimg.com/736x/16/ae/4b/16ae4b98d0d6c60c6576d4d3dca384f2.jpg" width="60" height="50" class="mr-2"><a class="navbar-brand" href="index.html"> NYC Motor Vehicle Collisions</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+         <div class="collapse navbar-collapse" id="navbar-body">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav ml-auto">
+               
+               <li class="nav-item"><a class="nav-link" href="index.html">Homepage</a></li>
+               <li class="nav-item"><a class="nav-link" href="#">Location</a></li>
+               <li class="nav-item"><a class="nav-link" href="injuries.html">Injuries</a></li>
+               <li class="nav-item"><a class="nav-link" href="driver.html">Drivers</a></li>
+               <li class="nav-item"><a class="nav-link" href="vehicle.html">Vehicles</a></li>
+               <li class="nav-item"><a class="nav-link" href="safety.html">Safety</a></li>
+
+ 
+            </ul>
+         </div>
+      </nav>
+
+
+      <div class="jumbotron jumbotron-fluid bg-light">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Text content -->
+            <div class="col-md-8">
+              <h1 class="display-4">Locations</h1>
+              <p class="lead">This tab is designed to show you how the collisions are distributed around NYC by the use of maps and other visualizations.</p>
+            </div>
+      
+            <!-- Image content -->
+            <div class="col-md-4 text-center">
+              <img src="loc.jpg" alt="Jumbotron Visual" class="img-fluid" style="max-height: 150px; object-fit: contain;">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+     
+      <div class="container text-center my-4"> 
+      <h1>Injury Hotspots Across NYC Boroughs</h1>
+      <embed src="map-viz-embed-div.html"
+      type="text/html" height="500" width="1000" />
+      <!--EMBED BIG MAP-->>
+      <p>This scatter map uses the scatter_mapbox to visualize the number of injuries from motor vehicle collisions across New York City’s boroughs. Each point on the map represents a location where the injuries occurred, with bubbles. The brightness and size of the bubble indicates the number of injured persons at that location. A bigger and brighter bubble indicates a higher injury count. By plotting the latitude and longitudes data, the map shows that Staten Island has the highest concentration of injuries per crash in this data set.</p>
+      </div>
+
+      <div class="container-fluid" id="bsr-wrapper">
+         <div class="row justify-content-center">
+       
+           <!-- map card -->
+           <div class="col-12 mb-5 d-flex justify-content-center">
+             <div class="card text-center shadow-lg" style="max-width: 1200px; width: 100%;">
+               <div class="card-header bg-white">
+                 <h2 class="mb-0">Distribution of Vehicle Crashes in NYC by Borough</h2>
+               </div>
+               <div class="ratio ratio-16x9">
+                  <iframe src="viz-MAP.html" style="width: 100%; height: 750px; border: none;" loading="lazy"></iframe>
+               </div>
+               <div class="card-body px-4 pt-3 pb-4">
+                 <p class="card-text fs-5">
+                   This map visualizes the geographic distribution of collisions across the five boroughs of New York City. The map highlights the crash locations, giving a quick identification of areas with higher concentration of crashes. From the map, we see that the area with the most concentration of crashes is Brooklyn which is one of the city’s busiest boroughs.
+                 </p>
+               </div>
+             </div>
+           </div>
+       
+           <!-- chart card -->
+           <div class="col-12 mb-5 d-flex justify-content-center">
+             <div class="card text-center shadow-lg" style="max-width: 1200px; width: 100%;">
+               <div class="card-header bg-white">
+                 <h2 class="mb-0">Injuries and Fatalities by Borough in NYC Vehicle Collisions</h2>
+               </div>
+               <div class="ratio ratio-16x9">
+                  <iframe src="MAP-viz-bo-div.html" style="width: 100%; height: 750px; border: none;" loading="lazy"></iframe>
+               </div>
+               <div class="card-body px-4 pt-3 pb-4">
+                 <p class="card-text fs-5">
+                  The bar chart shows a breakdown of injuries and fatalities caused by vehicle collisions in each borough. It includes data on pedestrians, cyclists, and drivers who are injured and killed. By stacking the different categories, we are able to compare the total number of people affected in each borough. From the graph, Brooklyn has the most number of injuries and deaths. However, Manhattan has  the second highest number of injured pedestrians.
+                 </p>
+               </div>
+             </div>
+           </div>
+       
+         </div>
+      </div>       
+       
+       
+      
+      <div class="container text-center my-4"> 
+         <h1>Traffic Collisions At Intersections vs. Non-Intersections 
+         </h1>
+         <!--EMBED BIG MAP-->
+         <embed src="intersec-div.html"
+         type="text/html" height="500" width="1000" />
+         <p>According to this pie chart, more collins occur at non-intersections. This suggests that a higher proportion of accidents happen away from intersections, possibly due to factors such as higher vehicle speeds, fewer traffic control measures, and potentially lower driver attention in non-intersection areas. While intersections are mostly  high risk zones due to cross-traffic, the lower percentage here might reflect better regulation, or increased driver awareness in these zones.
+         </p>
+         </div>
+      
+
+
+      <footer class="bg-light text-dark pt-5 pb-3">
+         <div class="container">
+           <div class="row">
+             <!-- About Us Section -->
+             <div class="col-md-6">
+               <h5>About Us</h5>
+               <p>
+                 Our mission is to make traffic data more accessible and understandable to the public.
+               </p>
+             </div>
+       
+             <!-- Contact Us Section -->
+             <div class="col-md-6">
+               <h5>Contact Us</h5>
+       
+               <!-- First Row -->
+               <div class="d-flex align-items-center mb-2">
+                  <span class="mr-2">Lindsay Abad</span>
+                  <a href="https://www.linkedin.com/in/lindsay-abad/" target="_blank" class="text-dark mr-2">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                  </a>
+                  <a href="https://github.com/lolind-apprentice" target="_blank" class="text-dark">
+                    <i class="fab fa-github fa-lg"></i>
+                  </a>
+                </div>
+        
+                <!-- Second Row -->
+                <div class="d-flex align-items-center mb-2">
+                  <span class="mr-2">Pomaa Anim-Amofa</span>
+                  <a href="https://www.linkedin.com/in/pomaa-anim-amofa/" target="_blank" class="text-dark mr-2">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                  </a>
+                  <a href="https://github.com/panimamo" target="_blank" class="text-dark">
+                    <i class="fab fa-github fa-lg"></i>
+                  </a>
+                </div>
+
+             </div>
+           </div>
+         </div>
+       </footer>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="js/main.js"></script>
+   </body>
+</html>

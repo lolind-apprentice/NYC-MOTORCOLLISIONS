@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+   <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/main.css">
+      <title>Page Title</title>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg bg-light navbar-light">
+         <img src="https://i.pinimg.com/736x/16/ae/4b/16ae4b98d0d6c60c6576d4d3dca384f2.jpg" width="60" height="50" class="mr-2"><a class="navbar-brand" href="index.html"> NYC Motor Vehicle Collisions</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+         <div class="collapse navbar-collapse" id="navbar-body">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item"><a class="nav-link" href="#">Homepage</a></li>
+               <li class="nav-item"><a class="nav-link" href="collision.html">Location</a></li>
+               <li class="nav-item"><a class="nav-link" href="injuries.html">Injuries</a></li>
+               <li class="nav-item"><a class="nav-link" href="driver.html">Drivers</a></li>
+               <li class="nav-item"><a class="nav-link" href="vehicle.html">Vehicles</a></li>
+               <li class="nav-item"><a class="nav-link" href="safety.html">Safety</a></li>
+            </ul>
+         </div>
+      </nav>
+      <div id="carousel-ID" class="carousel slide" data-ride="carousel" data-interval="3000">
+         <ol class="carousel-indicators">
+            <li data-target="#carousel-ID" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-ID" data-slide-to="1"></li>
+            <li data-target="#carousel-ID" data-slide-to="2"></li>
+            <li data-target="#carousel-ID" data-slide-to="3"></li>
+         </ol>
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img src="lol (1)0.jpg" height="500" class="d-block w-100" alt="carousel image">
+            
+            </div>
+            <div class="carousel-item">
+               <img src="upscalemedia-transformed.jpeg" height="500" class="d-block w-100" alt="carousel image">
+             
+            </div>
+            <div class="carousel-item">
+               <img src="mh (1)v0.png" height="500" class="d-block w-100" alt="carousel image">
+              
+            </div>
+            <div class="carousel-item">
+               <img src="avafest.png" height="500" class="d-block w-100" alt="carousel image">
+               
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#carousel-ID" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-ID" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+      </div>
+      <div class="container" id="bsr-wrapper">
+         <div class='my-5'>
+         <blockquote class="blockquote">
+            <p> “The automobile has become the carapace, the protective and aggressive shell, of urban and suburban man.”</p>
+            <footer class="blockquote-footer"> Ralph Nader, <cite title="Source Title"><a href="#" target="_blank">Unsafe at Any Speed—critical of car safety before regulations</a></cite></footer>
+         </blockquote>
+         <div class='mt-5'></div>
+         <h1>Our project 
+         </h1>
+         
+         <div class="row">
+            <div class="col-md-8">
+              <p>This project shows the relationships between time of day, gender, vehicle type and the number of collisions in New York City. It also highlights which boroughs experience the most number of collisions and analyzes contributing factors such as environmental and human-related factors. Our project is catered to make the public conscious about the dangers of car, bicycle, and motorcycle crashes, the danger that exist, and which ways we can prevent injuries and be safe while being on the road.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="https://i.pinimg.com/736x/ed/33/74/ed3374e2fee580f89ec80d44d8495ca5.jpg" class="img-fluid d-block border-0 rounded-0" style="max-width: 100%">
+            </div>
+          </div>
+
+          <div class="container my-5">
+
+            <!-- Topic Section -->
+            <h2>Topic</h2>
+            <p>
+              We focused on motor vehicle collisions across the five boroughs of New York City to show trends and patterns within the data. Our goal was to understand how various factors correlate with collision frequency and distribution. All our datasets were collected from New York City Open Data.
+            </p>
+          
+            <!-- Data Journey Section -->
+            <h2>Data Journey & Process</h2>
+            <p>
+              We used the requests library to retrieve the data and access JSON files from the NYC Open Data API. We worked with three datasets and had a total of 1000 rows with 22 columns. Using the json module, we parsed the raw data into dictionaries for better structure and access. This was then converted into DataFrames, which allowed us to filter, analyze, and visualize the data. We also assigned most of our DataFrames to a different variable for better control to prevent crashes.
+            </p>
+          
+            <!-- Exploration Questions Section with Image -->
+            <div class="row d-flex align-items-stretch mt-4">
+              <!-- Text Column -->
+              <div class="col-md-6 d-flex flex-column justify-content-start bg-light p-3">
+                <div class="w-100">
+                  <h2>Exploration Questions</h2>
+                  <p>
+                    - Do holidays impact the frequency of motor vehicle collisions?<br>
+                    - Does daytime/nighttime affect the frequency of crashes?<br>
+                    - Do people get killed or injured the most?<br>
+                    - Is it safer to be a pedestrian or cyclist in NYC?<br>
+                    - Do old/young people get into crashes the most?<br>
+                    - What is the typical emotional status of people after a crash?<br>
+                    - Is there any position in a vehicle safer than others?<br>
+                    - Does safety equipment actually prevent death in crashes?<br>
+                    - Are intersections a frequent place of collisions?<br>
+                    - In which NYC boroughs are there more crashes?<br>
+                    - What is the biggest contributing factor for collisions?<br>
+                    - Do people in crashes carry their driver's license?<br>
+                    - What is the most common property affected in crashes?<br>
+                    - Is there a correlation between the states where a car is registered and their frequency of collisions?<br>
+                  </p>
+                </div>
+              </div>
+          
+              <!-- Image Column -->
+               
+              <div class="col-md-6 d-flex align-items-center justify-content-center p-3">
+                
+                <img src="quest.jpg" 
+                alt="Exploration Visual" 
+                class="img-fluid" 
+                style="max-height: 450px; object-fit: contain;">
+
+              </div>
+            </div>
+          
+          </div>
+          
+      
+      <!-- added 'text-center' to center heading and paragraph -->
+      <div class='my-5'></div>
+      <div class="container text-center my-4"> 
+      <h1>VIDEOS</h1>
+      </div>
+
+      <!--  Bootstrap video grid -->
+      <div class="container my-4"> <!-- container -->
+      <div class="row">
+         <div class="col-md-6 mb-3">
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+            </div>
+         </div>
+         <div class="col-md-6 mb-3">
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+            </div>
+         </div>
+      </div>
+      </div>
+      
+      <div class='my-5'></div>
+         <div class="container text-center my-4"> 
+         <h1>TEAM</h1>
+         <div style="width: 900px; margin: 0 auto;">
+         <img src="TEAM_PIC.JPG" width="900" class="img-fluid mb-2">
+         <footer class="text-muted" style="font-size: 0.95rem;">
+         On the left there is Pomaa and on the right Lindsay. They are Computer Science majors in the Engineering department. Both say that the key to finishing this project was listening to afrobeats while they did it.
+         </footer>
+         </div>
+      </div>
+
+
+
+      <footer class="bg-light text-dark pt-5 pb-3">
+         <div class="container">
+           <div class="row">
+             <!-- About Us Section -->
+             <div class="col-md-6">
+               <h5>About Us</h5>
+               <p>
+                 Our mission is to make traffic data more accessible and understandable to the public.
+               </p>
+             </div>
+       
+             <!-- Contact Us Section -->
+             <div class="col-md-6">
+               <h5>Contact Us</h5>
+       
+               <!-- First Row -->
+               <div class="d-flex align-items-center mb-2">
+                 <span class="mr-2">Lindsay Abad</span>
+                 <a href="https://www.linkedin.com/in/lindsay-abad/" target="_blank" class="text-dark mr-2">
+                   <i class="fab fa-linkedin fa-lg"></i>
+                 </a>
+                 <a href="https://github.com/lolind-apprentice" target="_blank" class="text-dark">
+                   <i class="fab fa-github fa-lg"></i>
+                 </a>
+               </div>
+       
+               <!-- Second Row -->
+               <div class="d-flex align-items-center mb-2">
+                 <span class="mr-2">Pomaa Anim-Amofa</span>
+                 <a href="https://www.linkedin.com/in/pomaa-anim-amofa/" target="_blank" class="text-dark mr-2">
+                   <i class="fab fa-linkedin fa-lg"></i>
+                 </a>
+                 <a href="https://github.com/panimamo" target="_blank" class="text-dark">
+                   <i class="fab fa-github fa-lg"></i>
+                 </a>
+               </div>
+       
+             </div>
+           </div>
+         </div>
+       </footer>
+       
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="js/main.js"></script>
+   </body>
+</html>
